@@ -21,9 +21,6 @@ jobs:
     env:
       VERSION_APP: ${{ github.event.inputs.VERSION }}
       BUILD_NUMBER: ${{ github.event.inputs.BUILD_NUMBER }}
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
 
     steps:
     - uses: actions/checkout@v3
